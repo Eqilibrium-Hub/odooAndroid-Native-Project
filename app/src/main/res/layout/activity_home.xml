@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/listClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_client"
+        android:width="140dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="682dp"
+        android:layout_gravity="bottom"/>
+
+    <Button
+        android:id="@+id/listLivreur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_livreur"
+        android:width="140dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="681dp"
+        android:layout_gravity="bottom"/>
+
+    <Button
+        android:id="@+id/listLivraison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/list_livraison"
+        android:width="140dp"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="483dp"
+        android:layout_gravity="bottom"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

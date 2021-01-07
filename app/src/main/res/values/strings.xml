@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">odoo PIntegration</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Odoo Project</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_product">Liste des produits</string>
+    <string name="list_client">Liste des clients</string>
+    <string name="list_livraison">Liste des livraisons</string>
+    <string name="list_livreur">Liste des livreures</string>
+</resources>
