@@ -55,27 +55,24 @@ public class ListClient extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_client);
-
+        initRecyclerView();
     }
 
     private void initRecyclerView(){
         RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
-        StringRequest stringRequest=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+        StringRequest stringRequest=new StringRequest(Request.Method.GET, url_client, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.i("country_id" ,"qwertyuik78965");
                 JSONArray array = null;
                 try {
                     array =new JSONArray(response);
+//                    JSONObject json = new JSONObject(response);
+//                    JSONArray country_id = json.getJSONArray("country_id");
                     for (int i=0;i<array.length();i++){
                         JSONObject obj=array.getJSONObject(i);
-                        String a=obj.getString("country_id");
-                        Log.i("country_id" ,a);
-                        Client user=new Client(obj.getString("name"),"dgfgd","fgdfd");
-                        data.add(user);
-
-
-
+                        Log.i("country_id" , obj.getString("country_id").substring(6,19));
+                        Client client=new Client(obj.getString("name"),obj.getString("country_id").substring(1,4),obj.getString("country_id").substring(6,19));
+                        data.add(client);
                     }
                     customAdapter=new CustomAdapterClient(data);
                     myrecycler = findViewById(R.id.recyclerv_view);

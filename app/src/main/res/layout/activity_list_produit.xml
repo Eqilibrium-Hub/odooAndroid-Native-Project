@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListClient">
+    tools:context=".ListProduit">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recyclerv_view" />
+        android:id="@+id/recyclerv_view_product" />
 </androidx.constraintlayout.widget.ConstraintLayout>

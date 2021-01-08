@@ -95,12 +95,11 @@ public class MainActivity extends AppCompatActivity {
                 .setConnectListener(new OdooConnectListener() {
                     @Override
                     public void onConnected(OdooVersion version) {
-                        Toast.makeText(MainActivity.this,"yes"+version.server_version,Toast.LENGTH_LONG).show();
-//                      client.authenticate(login.getText().toString(),mdp.getText().toString(), db, loginCallback);
+//                        Toast.makeText(MainActivity.this,"yes"+version.server_version,Toast.LENGTH_LONG).show();
                         client.authenticate(mdp.getText().toString(), login.getText().toString(), db, loginCallback);
-                        Toast.makeText(MainActivity.this,"ligne 92 ",Toast.LENGTH_LONG).show();
-                        Log.i("ligne 94 :",client.toString());
-                        Log.i("ligne 95 :",(login.getText().toString()+ mdp.getText().toString()+ db));
+//                        Toast.makeText(MainActivity.this,"ligne 92 ",Toast.LENGTH_LONG).show();
+//                        Log.i("ligne 94 :",client.toString());
+//                        Log.i("ligne 95 :",(login.getText().toString()+ mdp.getText().toString()+ db));
                     }
                 }).build();
 
