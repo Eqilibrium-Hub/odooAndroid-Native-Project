@@ -24,7 +24,7 @@ import oogbox.api.odoo.client.listeners.OdooConnectListener;
 import oogbox.api.odoo.client.listeners.OdooErrorListener;
 
 public class MainActivity extends AppCompatActivity {
-    final String url = "http://192.168.0.54:8069";
+    final String url = "http://192.168.43.239:8069";
     private String db ="odoo_db";
     OdooClient client;
     private Button loginBtn;

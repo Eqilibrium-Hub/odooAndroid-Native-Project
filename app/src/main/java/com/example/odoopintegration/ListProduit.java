@@ -23,7 +23,7 @@ import java.util.ArrayList;
 
 public class ListProduit extends AppCompatActivity {
 
-    private String url_product ="http://192.168.0.54/odoo_2/readAllProduct.php";
+    private String url_product ="http://192.168.43.239/odoo_2/readAllProduct.php";
     ArrayList<Produit> data=new ArrayList<>();
     private RecyclerView.Adapter customAdapter;
     private RecyclerView myrecycler;

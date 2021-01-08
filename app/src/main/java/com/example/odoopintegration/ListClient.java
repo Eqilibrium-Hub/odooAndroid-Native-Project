@@ -47,7 +47,7 @@ public class ListClient extends AppCompatActivity {
     private String login;
     private String mdp;
     private String bd;
-    private String url_client ="http://192.168.0.54/odoo_2/readAllPartner.php";
+    private String url_client ="http://192.168.43.239/odoo_2/readAllPartner.php";
     ArrayList<Client> data=new ArrayList<>();
     private RecyclerView.Adapter customAdapter;
     private RecyclerView myrecycler;

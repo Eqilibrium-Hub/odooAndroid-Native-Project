@@ -4,8 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeActivity">
-
+    <ImageView
+        android:id="@+id/iset"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:foregroundGravity="top"
+        android:src="@drawable/iset"
+        tools:ignore="MissingConstraints"
+        android:layout_height="150dp" />
+    <TextView
+        android:id="@+id/desc"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iset"
+        android:text="@string/Description_iset"
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        android:textColor="#878584"
+        tools:ignore="InvalidId,UnknownId"
+        android:layout_toRightOf="@+id/iset" />]
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
     <Button
         android:id="@+id/listClient"
         android:layout_width="wrap_content"
@@ -14,7 +40,10 @@
         android:width="140dp"
         tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="682dp"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#00706C6C"
+        android:backgroundTint="#51adcf"/>
 
     <Button
         android:id="@+id/listProduct"
@@ -24,7 +53,11 @@
         android:width="140dp"
         tools:layout_editor_absoluteX="116dp"
         tools:layout_editor_absoluteY="681dp"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#00706C6C"
+        android:backgroundTint="#51adcf"
+        />
 
     <Button
         android:id="@+id/listLivraison"
@@ -34,5 +67,9 @@
         android:width="140dp"
         tools:layout_editor_absoluteX="279dp"
         tools:layout_editor_absoluteY="483dp"
-        android:layout_gravity="bottom"/>
+        android:layout_gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#00706C6C"
+        android:backgroundTint="#51adcf"/>
+    </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

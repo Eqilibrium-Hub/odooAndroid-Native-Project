@@ -11,4 +11,9 @@
     <string name="list_client">Liste des clients</string>
     <string name="list_livraison">Liste des livraisons</string>
     <string name="list_livreur">Liste des livreures</string>
+    <string name="Description_iset">"ISET de Bizerte est un établissement public à caractère scientifique et technologique.
+        Sa principale mission consiste à contribuer au développement socio-économique et au transfert technologique dans la
+        région Bizerte ainsi que le renforcement de l employabilité l insertion professionnelle des diplômés de l enseignement supérieur"
+    </string>
+
 </resources>
